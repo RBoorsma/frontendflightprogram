@@ -16,9 +16,9 @@
 .successful
 {
     width: 200px;
-    color: white;
+    color: black;
     background: lime;
-    border: 2px solid red;
+    border: 2px solid lime;
     border-radius: 12px;
     margin-top: 20px;
     text-align: center;
