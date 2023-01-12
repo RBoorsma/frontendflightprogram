@@ -1,0 +1,23 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: docker login
+      uses: docker/login-action@v2
+      with:
+       username: ${{secrets.DOCKER_USER}}
+       password: ${{secrets.DOCKER_PASSWORD}}
+    - name: Build the Docker image
+      run: docker build -t rboorsma/frontend .
+    - name: Push to docker
+      run: docker push rboorsma/frontend:latest
