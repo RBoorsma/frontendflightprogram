@@ -1,0 +1,25 @@
+.color-white
+{
+    color: white;
+}
+.error
+{
+
+    width: 200px;
+    color: white;
+    background: crimson;
+    border: 2px solid red;
+    border-radius: 12px;
+    margin-top: 20px;
+    text-align: center;
+}
+.successful
+{
+    width: 200px;
+    color: black;
+    background: lime;
+    border: 2px solid lime;
+    border-radius: 12px;
+    margin-top: 20px;
+    text-align: center;
+}
